@@ -72,8 +72,8 @@ php db:seed
    Url: http://{host_name}/api/payments/hours/all
    
 
-6. Закрытие всех неопогашенных транзакций
-7. 
+5. Закрытие всех неопогашенных транзакций
+ 
    Методы: POST
    
    Url:  http://{host_name}/api/payments/hours/execute
