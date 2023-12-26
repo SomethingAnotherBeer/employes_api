@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_types', function (Blueprint $table) {
+        Schema::create('users_rates', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('user_type_name');
 
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('rate_id')->references('id')->on('rates');
+            $table->decimal('payment')->default(0);
         });
     }
 
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_types');
+        Schema::dropIfExists('users_rates');
     }
 };

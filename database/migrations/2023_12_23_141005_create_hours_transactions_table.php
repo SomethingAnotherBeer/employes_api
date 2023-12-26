@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_types', function (Blueprint $table) {
+        Schema::create('hours_transactions', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('user_type_name');
+
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->integer('worked_hours')->unsigned();
+            $table->boolean('is_done')->default(false);
+            $table->date('hours_transaction_created');
 
         });
     }
@@ -24,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_types');
+        Schema::dropIfExists('hours_transactions');
     }
 };

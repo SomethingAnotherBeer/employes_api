@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserType extends Model
+class Rate extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_type_name'];
+    protected $fillable = ['rate_slug', 'rate_name'];
 
 }
