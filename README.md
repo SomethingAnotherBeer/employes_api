@@ -3,8 +3,10 @@
 ## Действия перед использованием  
 
 
-Миграция бд
-php artisan migrate
+Миграция бд  
+
+php artisan migrate  
+
 php db:seed
 
 
