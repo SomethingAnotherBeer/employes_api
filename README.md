@@ -1,4 +1,7 @@
-## Employes api
+## Employes api  
+
+## Действия перед использованием  
+
 
 Миграция бд
 php artisan migrate
