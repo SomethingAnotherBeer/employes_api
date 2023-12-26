@@ -79,7 +79,7 @@ php db:seed
    Url:  http://{host_name}/api/payments/hours/execute
    
 
-## Api сотрудника  
+## API сотрудника  
 1. Добавление/обновление транзакции рабочих часов
     
    Методы: POST, PATCH
