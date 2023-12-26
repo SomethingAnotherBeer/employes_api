@@ -64,3 +64,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Employes api
+
+Миграция бд
+php artisan migrate
+php db:seed
+
+Документация API
+
+1. Создание сотрудника
+    Методы: POST
+   Тело запроса:
+   -name: string
+   -email: string|email
+   -password: string
+
+   Url: http://{host_name}/api/employee/create
+
+2. Закрепление рабочей ставки за сотрудником
+   По умолчанию доступно две рабочие ставки: per_hour и per_week.
+   Методы: POST, PATCH
+   
+   
+
+
